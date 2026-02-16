@@ -1,6 +1,6 @@
 # FullStack Requirement Standard (FRS)
 
-**Version 1.0.3** | January 2026
+**Version 1.0.4** | January 2026
 
 | | |
 |---|---|
@@ -22,7 +22,7 @@ Modern software development faces challenges in translating requirements across 
 ### 1.2 Design Goals
 
 - **Human readability**: Plain text format readable without specialized tools
-- **Machine parseability**: Structured YAML and flow syntax for automated tooling
+- **Machine parseability**: Structured YAML and flow syntax for automated tooling and validation
 - **Implementation priority**: Numbered steps create vertical happy path
 - **Alternative flows**: Indented dash syntax for error handling and edge cases
 - **Extensibility**: Optional fields for technical specifications as needed
@@ -36,13 +36,13 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 ### 2.1 File Extension
 
-FRS files MUST use the `.frs` extension. Files are encoded in UTF-8 without BOM.
+FRS files SHOULD use the `.md` extension. Files are encoded in UTF-8 without BOM.
 
 ### 2.2 File Naming Convention
 
-File names SHOULD follow the pattern: `{module}-{action}.frs`
+File names SHOULD follow the pattern: `{module}-{action}.md`
 
-**Examples:** `credit-validate-ltv.frs`, `auth-login.frs`, `report-generate.frs`
+**Examples:** `credit-validate-ltv.md`, `auth-login.md`, `report-generate.md`
 
 ### 2.3 Document Structure
 
@@ -179,7 +179,7 @@ AI agents SHOULD generate tests as follows:
 
 - One happy path test per numbered Flow step
 - One edge case test per alternative path (indented dash lines)
-- Acceptance tests validating `user_outcome` and `business_outcome`
+- Acceptance tests validating `user_outcome`
 - Performance tests based on `Performance:` section
 
 ### 7.4 Context Understanding
@@ -190,6 +190,7 @@ The `context` field provides starting state information. AI agents SHOULD use th
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 1.0.4 | February 2026 | Removed `business_outcome` field from acceptance testing, relaxing the requirement for file format as SHOULD and to *.md, change to 1.2 Design Goals -> Machine parseability |
 | 1.0.3 | January 2026 | Moved `business_outcome` field to optional field |
 | 1.0.2 | December 2025 | Added `context` field, formalized flow syntax with numbered steps, introduced dash-indented alternative paths |
 | 1.0.1 | — | Added `user_outcome` and `business_outcome` required fields |
