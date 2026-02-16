@@ -1,23 +1,23 @@
-# FullStack Requirement Standard (FRS)
+# Fullstack Requirement Specification (FRS)
 
-**Version 1.0.4** | February 2026
+**Version 1.0.5** | February 2026
 
 | | |
 |---|---|
 | **Status** | Working Draft |
-| **Editors** | Love Lundquist @ Decerno AB |
+| **Editors** | Love Lundquist @ Decerno AB |s
 | **License** | CC0 1.0 Universal (Public Domain) |
 | **Based On** | Gherkin BDD, YAML frontmatter, OpenAPI Specification |
 
 ## Abstract
 
-The FullStack Requirement Standard (FRS) is a lightweight, human-readable, and machine-parseable format for documenting software requirements. FRS combines YAML frontmatter for metadata, numbered flow steps for implementation priority, and optional technical specifications. The standard is designed to be executable by both human developers and AI agents, enabling seamless translation from requirements to implementation, testing, and documentation.
+The Fullstack Requirement Specification (FRS) is a lightweight, human-readable, and machine-parseable format for documenting software requirements. FRS combines YAML frontmatter for metadata, numbered flow steps for implementation priority, and optional technical specifications. The standard is designed to be executable by both human developers and AI agents, enabling seamless translation from requirements to implementation, testing, and documentation.
 
 ## 1. Introduction
 
 ### 1.1 Purpose
 
-Modern software development faces challenges in translating requirements across stakeholders—product managers, developers, UX designers, QA engineers, and AI agents. Existing standards (Gherkin, OpenAPI, user stories) address specific domains but lack a unified format covering user context, business outcomes, technical implementation, and priority flow. FRS addresses this gap by providing a single, extensible format for full-stack requirements.
+Modern software development faces challenges in translating requirements across stakeholders—product managers, developers, UX designers, QA engineers, and AI agents. Existing specifications (Gherkin, OpenAPI, user stories) address specific domains but lack a unified format covering user context, business outcomes, technical implementation, and priority flow. FRS addresses this gap by providing a single, extensible format for full-stack requirements.
 
 ### 1.2 Design Goals
 
@@ -190,6 +190,7 @@ The `context` field provides starting state information. AI agents SHOULD use th
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 1.0.5 | February 2026 | Renamed and updated wording from Fullstack Requirement Standard to Fullstack Requirement Specification |
 | 1.0.4 | February 2026 | Removed `business_outcome` field from acceptance testing, relaxing the requirement for file format as SHOULD and to *.md, change to 1.2 Design Goals -> Machine parseability |
 | 1.0.3 | January 2026 | Moved `business_outcome` field to optional field |
 | 1.0.2 | December 2025 | Added `context` field, formalized flow syntax with numbered steps, introduced dash-indented alternative paths |
