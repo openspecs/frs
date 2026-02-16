@@ -1,6 +1,6 @@
 # FullStack Requirement Standard (FRS)
 
-**Version 1.0.4** | January 2026
+**Version 1.0.4** | February 2026
 
 | | |
 |---|---|
