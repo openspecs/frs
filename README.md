@@ -1,6 +1,6 @@
 # Fullstack Requirement Specification (FRS)
 
-**Version 1.1.0** | February 2026
+**Version 1.1.1** | March 2026
 
 |  |  |
 | --- | --- |
@@ -69,8 +69,8 @@ An FRS document consists of two sections:
 | Field | Description | Example |
 | --- | --- | --- |
 | `business_outcome` | Measurable business value | `Reduce default rate by 15%` |
-| `priority` | Importance level | `critical` | `high` | `medium` | `low` |
-| `status` | Current state | `draft` | `approved` | `implemented` |
+| `priority` | Importance level | `critical`, `medium`, `skip` |
+| `status` | Current state | `draft`, `approved`, `implemented` |
 | `estimate` | Time estimate | `3d`, `2w` |
 | `depends_on` | Array of requirement IDs | `[AUTH-001, USER-002]` |
 | `tags` | Array of categorization labels | `[security, mvp]` |
@@ -309,6 +309,7 @@ The `context` field provides starting state information. AI agents SHOULD use th
 
 | Version | Date | Changes |
 | --- | --- | --- |
+| 1.1.1 | March 2026 | Added `skip` value to `priority` section |
 | 1.1.0 | February 2026 | Added `Validate:` section (4.4) with `happy_path`, `boundaries`, `invariants`, and `contracts` subsections. Added validation loop for AI agents (7.4). Updated design goals, document structure, testing strategy, and complete example. |
 | 1.0.5 | February 2026 | Renamed and updated wording from Fullstack Requirement Standard to Fullstack Requirement Specification |
 | 1.0.4 | February 2026 | Removed `business_outcome` field from acceptance testing, relaxing the requirement for file format as SHOULD and to \*.md, change to 1.2 Design Goals -> Machine parseability |
