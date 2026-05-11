@@ -1,6 +1,6 @@
 # Contributing to FRS
 
-Thank you for your interest in contributing to the FullStack Requirement Standard!
+Thank you for your interest in contributing to the FullStack Requirement Specification!
 
 ## How to Contribute
 
@@ -19,8 +19,7 @@ Thank you for your interest in contributing to the FullStack Requirement Standar
 ### Branch Naming
 
 - `fix/` - Corrections, typos, clarifications
-- `feat/` - New sections or fields
-- `docs/` - README, examples, tooling docs
+- `proposal/` - New sections or fields
 
 ### PR Requirements
 
